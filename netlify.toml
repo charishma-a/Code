@@ -1,0 +1,23 @@
+[[plugins]]
+  package = "/plugins/multiple-env"
+[build]
+  command   = "npm run build"
+  functions = "out_functions"
+  publish   = "out_publish"
+
+[context.deploy-preview]
+  environment = { NODE_ENV = "CI" }
+
+[[redirects]]
+  from = "/live-data2-home"
+  to = "/"
+  status = 301
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/backer-kernls-home"
+  to = "/"
+  status = 301
+  force = true
+  headers = {X-From = "Netlify"}
