@@ -1,0 +1,5 @@
+mutation UnsubscribeDonor($input: UnsubscribeDonorInput!) {
+  unsubscribeDonor(input: $input) {
+    success
+  }
+}

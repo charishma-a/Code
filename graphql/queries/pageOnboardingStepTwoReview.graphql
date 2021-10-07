@@ -1,0 +1,8 @@
+query PageOnboardingStepTwoReview {
+  me {
+    ...BasicProfile
+    projectChampion {
+      ...PartialProjectChampion
+    }
+  }
+}

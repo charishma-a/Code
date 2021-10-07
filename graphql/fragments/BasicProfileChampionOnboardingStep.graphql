@@ -1,0 +1,10 @@
+fragment BasicProfileChampionOnboardingStep on ProfileChampionOnboardingStep {
+  id
+  createdAt
+  updatedAt
+  slug
+  label
+  description
+  previousStepSlug
+  nextStepSlug
+}

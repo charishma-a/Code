@@ -1,0 +1,11 @@
+query MySocialPosts {
+  mySocialPosts {
+    ...BasicSocialPost
+    projectCampaign {
+      ...BasicProjectCampaign
+    }
+    socialPostChannel {
+      ...BasicSocialPostChannel
+    }
+  }
+}

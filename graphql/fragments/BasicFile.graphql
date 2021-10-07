@@ -1,0 +1,13 @@
+fragment BasicFile on File {
+  id
+  createdAt
+  updatedAt
+  name
+  fieldName
+  secureUrl
+  resourceType
+  format
+  cloudinaryPublicId
+  type
+  csvFrom
+}

@@ -1,0 +1,33 @@
+mutation SubmitOnboardingStepOneForm($updateOnboardingStepInput: UpdateProfileChampionOnboardingStepInput!, $updateProjectChampionInput: UpdateMyProjectChampionInput!) {
+  updateMyProfileChampionOnboardingStep(input: $updateOnboardingStepInput) {
+    id
+    createdAt
+    updatedAt
+    supportingProject {
+      id
+      title
+      description
+      disease
+    }
+    onboardingStep {
+      id
+      createdAt
+      updatedAt
+      slug
+      label
+      description
+      previousStepSlug
+      nextStepSlug
+    }
+  }
+  updateMyProjectChampion(input: $updateProjectChampionInput) {
+    id
+    matchCommitment
+    bio
+    quote
+    dedicatedNote
+    project {
+      ...BasicProject
+    }
+  }
+}

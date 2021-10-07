@@ -1,0 +1,23 @@
+fragment BasicProjectCampaign on ProjectCampaign {
+  id
+  createdAt
+  updatedAt
+  isActive
+  isCompleted
+  goalAmount
+  startDate
+  endDate
+  referralCode
+  
+  daysLeftInCampaign
+  campaignDateRange
+
+  projectCampaignMemberPreferences {
+    id
+    createdAt
+    updatedAt
+    sendDonationAlert
+    progressUpdateFrequency
+    assetRequest
+  }
+}

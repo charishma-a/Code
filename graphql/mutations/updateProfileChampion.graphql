@@ -1,0 +1,25 @@
+mutation UpdateProfileChampion($input: UpdateProfileChampionInput!) {
+  updateProfileChampion(input: $input) {
+    id
+    profile {
+      id
+      firstName
+      lastName
+      email
+    }
+    onboardingStep {
+      id
+      nextStepSlug
+      slug
+      previousStepSlug
+      label
+      description
+    }
+    supportingProject {
+      id
+      title
+      description
+    }
+    supportingIllnesses
+  }
+}

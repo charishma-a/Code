@@ -1,0 +1,9 @@
+fragment PartialOrganization on Organization {
+  id
+  avatar
+  name
+  description
+  shortDescription
+  email
+  phoneNumber
+}

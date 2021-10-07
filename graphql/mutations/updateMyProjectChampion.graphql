@@ -1,0 +1,8 @@
+mutation UpdateMyProjectChampion($input: UpdateMyProjectChampionInput!) {
+  updateMyProjectChampion(input: $input) {
+    ...BasicProjectChampion
+    project {
+      ...BasicProject
+    }
+  }
+}

@@ -1,0 +1,21 @@
+fragment BasicProjectChampion on ProjectChampions {
+  id
+  createdAt
+  updatedAt
+  active
+  anonymous
+  isActive
+  avatar
+  dedicatedNote
+  quote
+  bio
+  matchCommitment
+  type
+  presenceOnPage
+  currency
+
+  openMatchCommitment
+  totalImpact
+  donationsMatchedTotal
+  donationsAttributedTotal
+}

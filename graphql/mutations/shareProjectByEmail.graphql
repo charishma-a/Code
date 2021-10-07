@@ -1,0 +1,5 @@
+mutation ShareProjectByEmail($input: ShareProjectByEmailInput!) {
+  shareProjectByEmail(input: $input) {
+    message
+  }
+}

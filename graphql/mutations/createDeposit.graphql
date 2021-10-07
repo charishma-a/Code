@@ -1,0 +1,15 @@
+mutation CreateDeposit($input: CreateDepositInput!) {
+  createDeposit(input: $input) {
+    id
+    amount
+    type
+    currency
+    profile {
+      id
+      firstName
+      lastName
+      email
+      customerId
+    }
+  }
+}

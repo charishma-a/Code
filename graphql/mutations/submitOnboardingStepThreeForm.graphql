@@ -1,0 +1,7 @@
+mutation SubmitOnboardingStepThreeForm(
+  $input: UpsertMyOnboardingCampaignEmailInput!
+) {
+  upsertMyOnboardingCampaignEmail(input: $input) {
+    ...BasicProjectCampaign
+  }
+}

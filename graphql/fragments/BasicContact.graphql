@@ -1,0 +1,8 @@
+fragment BasicContact on Contact {
+  id
+  createdAt
+  updatedAt
+  firstName
+  lastName
+  email
+}

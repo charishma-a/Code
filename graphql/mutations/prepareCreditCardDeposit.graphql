@@ -1,0 +1,10 @@
+mutation PrepareCreditCardDeposit($input: PrepareCreditCardDepositInput!) {
+  prepareCreditCardDeposit(input: $input) {
+    clientSecret
+    depositId
+    deposit {
+      ...BasicDeposit
+    }
+    status
+  }
+}

@@ -1,0 +1,10 @@
+fragment ProjectCards on Project {
+  id
+  moneyRaised
+  projectOrganizations {
+    id
+  }
+  projectChampions {
+    id
+  }
+}

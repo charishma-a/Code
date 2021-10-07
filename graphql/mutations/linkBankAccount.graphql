@@ -1,0 +1,3 @@
+mutation LinkBankAccount($input: LinkBankAccountInput!) {
+  linkBankAccount(input: $input)
+}

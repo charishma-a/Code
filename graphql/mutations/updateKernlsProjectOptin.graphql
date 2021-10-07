@@ -1,0 +1,3 @@
+mutation UpdateKernlsProjectOptin($input: UpdateKernlsProjectOptinInput!) {
+  updateKernlsProjectOptin(input: $input)
+}

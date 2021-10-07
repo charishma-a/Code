@@ -1,0 +1,10 @@
+fragment BasicResearchInstitution on ResearchInstitution {
+  id
+  createdAt
+  updatedAt
+  name
+  university
+  avatarUrl
+  shortName
+  location
+}

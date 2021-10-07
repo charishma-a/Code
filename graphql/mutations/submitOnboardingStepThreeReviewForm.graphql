@@ -1,0 +1,29 @@
+mutation SubmitOnboardingStepThreeReviewForm(
+  $sendEmailInput: SendEmailViaArgContactsInput!
+  $updateOnboardingStepInput: UpdateProfileChampionOnboardingStepInput!
+) {
+  sendEmailViaArgContacts(input: $sendEmailInput) {
+    ...BasicEmail
+  }
+  updateMyProfileChampionOnboardingStep(input: $updateOnboardingStepInput) {
+    id
+    createdAt
+    updatedAt
+    supportingProject {
+      id
+      title
+      description
+      disease
+    }
+    onboardingStep {
+      id
+      createdAt
+      updatedAt
+      slug
+      label
+      description
+      previousStepSlug
+      nextStepSlug
+    }
+  }
+}

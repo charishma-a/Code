@@ -1,0 +1,5 @@
+query GetMyFiles($filters: GetMyFilesFilters) {
+  getMyFiles(filters: $filters) {
+    ...BasicFile
+  }
+}

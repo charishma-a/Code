@@ -1,0 +1,13 @@
+mutation UpdateMyEmail($input: UpdateMyEmailInput!) {
+  updateMyEmail(input: $input) {
+    ...BasicEmail
+    emailContacts {
+      id
+      createdAt
+      updatedAt
+      contact {
+        ...BasicContact
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+query PageOnboardingStepOne($projectIds: [String!]! ) {
+  me {
+    id
+    firstName
+    lastName
+    email
+    verifiedAt
+    isSalesRequired
+    profileChampion {
+      id
+      createdAt
+      updatedAt
+      onboardingStep {
+        id
+        createdAt
+        updatedAt
+        slug
+        label
+        description
+        previousStepSlug
+        nextStepSlug
+      }
+    }
+    projectChampion {
+      id
+      matchCommitment
+      project {
+        ...BasicProject
+      }
+    }
+  }
+  projects(ids: $projectIds) {
+    ...BasicProject
+    researchInstitution {
+      id
+      name
+      university
+      avatarUrl
+      shortName
+      location
+    }
+    projectResearchers {
+      id
+      order
+      researcher {
+        id
+        avatarUrl
+        prefix
+        firstName
+        lastName
+        email
+        title
+        isLead
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+mutation SubmitOnboardingStepTwoReviewForm($updateOnboardingStepInput: UpdateProfileChampionOnboardingStepInput!) {
+  updateMyProfileChampionOnboardingStep(input: $updateOnboardingStepInput) {
+    id
+    createdAt
+    updatedAt
+    supportingProject {
+      id
+      title
+      description
+      disease
+    }
+    onboardingStep {
+      id
+      createdAt
+      updatedAt
+      slug
+      label
+      description
+      previousStepSlug
+      nextStepSlug
+    }
+  }
+  publishMyCampaign {
+    ...BasicProjectCampaign
+    projectChampion {
+      ...BasicProjectChampion
+    }
+  }
+  upsertMyOnboardingCampaignEmail(input: {}) {
+    ...BasicProjectCampaign
+    projectChampion {
+      ...BasicProjectChampion
+    }
+  }
+}

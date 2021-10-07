@@ -1,0 +1,84 @@
+query AccessCode($code: String!, $profileId: String!) {
+  accessCode(code: $code, profileId: $profileId) {
+    id
+    createdAt
+    updatedAt
+    code
+    endpointCode
+    expiredAt
+    profile {
+      id
+      firstName
+      lastName
+      createdAt
+      updatedAt
+      email
+      customerId
+    }
+    accessCodeData {
+      id
+      createdAt
+      updatedAt
+      matchCommitment
+      amount
+      currency
+      foundation {
+        id
+        name
+        createdAt
+        updatedAt
+      }
+      project {
+        id
+        active
+        createdAt
+        updatedAt
+        title
+        description
+        researchInstitution {
+          id
+          name
+          university
+          createdAt
+          updatedAt
+        }
+        projectResearchers {
+          id
+          researcher {
+            id
+            firstName
+            lastName
+            prefix
+            title
+            isLead
+          }
+        }
+        projectChampions {
+          id
+          matchCommitment
+          profile {
+            id
+          }
+        }
+        projectOrganizations {
+          id
+          matchCommitment
+          organization {
+            id
+            profile {
+              id
+            }
+          }
+          projectOrganizationMembers {
+            id
+            organizationMember {
+              profile {
+                id
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

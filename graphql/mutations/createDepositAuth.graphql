@@ -1,0 +1,5 @@
+mutation CreateDepositAuth($input: CreateDepositAuthInput!) {
+  createDepositAuth(input: $input) {
+    ...BasicDeposit
+  }
+}

@@ -1,0 +1,30 @@
+query ProjectContactSales($ids: [String!]!) {
+  projects(ids: $ids) {
+    id
+    title
+    description
+    disease
+    researchInstitution {
+      id
+      name
+      university
+      avatarUrl
+      shortName
+      location
+    }
+    projectResearchers {
+      id
+      order
+      researcher {
+        id
+        avatarUrl
+        prefix
+        firstName
+        lastName
+        email
+        title
+        isLead
+      }
+    }
+  }
+}

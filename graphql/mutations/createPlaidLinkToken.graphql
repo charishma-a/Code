@@ -1,0 +1,7 @@
+mutation CreatePlaidLinkToken($input: CreatePlaidLinkTokenInput!) {
+  createPlaidLinkToken(input: $input) {
+    request_id
+    expiration
+    link_token
+  }
+}

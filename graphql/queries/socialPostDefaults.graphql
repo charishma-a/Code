@@ -1,0 +1,11 @@
+query SocialPostDefaults {
+  socialPostDefaults {
+    ...BasicSocialPostDefault
+    project {
+      ...BasicProject
+    }
+    socialPostChannel {
+      ...BasicSocialPostChannel
+    }
+  }
+}

@@ -1,0 +1,13 @@
+mutation CreateMyContacts($input: CreateMyContactsInput!) {
+  createMyContacts(input: $input) {
+    ...BasicContact
+    emailContacts {
+      id
+      createdAt
+      updatedAt
+      email {
+        ...BasicEmail
+      }
+    }
+  }
+}

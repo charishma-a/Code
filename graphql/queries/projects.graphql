@@ -1,0 +1,5 @@
+query Project($ids: [String!]!) {
+  projects(ids: $ids) {
+    ...PartialProject
+  }
+}

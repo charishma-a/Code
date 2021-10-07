@@ -1,0 +1,3 @@
+mutation FoundationLogin($input: FoundationLoginInput!) {
+  foundationLogin(input: $input)
+}

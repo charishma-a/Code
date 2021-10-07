@@ -1,0 +1,29 @@
+query Deposit($id: String!) {
+  deposit(id: $id) {
+    id
+    currency
+    amount
+    processingFee
+    profile {
+      id
+      firstName
+      lastName
+      deposits {
+        id
+        currency
+        amount
+        processingFee
+      }
+    }
+    project {
+      id
+      projectChampions {
+        id
+        profile {
+          id
+        }
+        matchCommitment
+      }
+    }
+  }
+}

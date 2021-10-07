@@ -1,0 +1,13 @@
+fragment BasicResearcher on Researcher {
+  id
+  createdAt
+  updatedAt
+  avatarUrl
+  prefix
+  firstName
+  lastName
+  email
+  title
+  isLead
+  fullName
+}

@@ -1,0 +1,12 @@
+fragment PartialProject on Project {
+  id
+  donationsTotal
+  donationsMatchedTotal
+  moneyRaised
+  projectOrganizations {
+    ...PartialProjectOrganization
+  }
+  projectChampions {
+    ...PartialProjectChampion
+  }
+}

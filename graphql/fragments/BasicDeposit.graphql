@@ -1,0 +1,13 @@
+fragment BasicDeposit on Deposit {
+  id
+  createdAt
+  updatedAt
+  type
+  amount
+  amountUsd
+  applicationFeeAmount
+  currency
+  coverProcessingFee
+  processingFee
+  processingFeePercent
+}

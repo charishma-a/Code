@@ -1,0 +1,5 @@
+mutation SendTestEmail($input: SendTestEmailInput!) {
+  sendTestEmail(input: $input) {
+    ...BasicEmail
+  }
+}

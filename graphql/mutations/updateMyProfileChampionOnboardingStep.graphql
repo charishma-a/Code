@@ -1,0 +1,13 @@
+mutation UpdateMyProfileChampionOnboardingStep($input: UpdateProfileChampionOnboardingStepInput!) {
+  updateMyProfileChampionOnboardingStep(input: $input) {
+    id
+    onboardingStep {
+      id
+      nextStepSlug
+      previousStepSlug
+      label
+      description
+      slug
+    }
+  }
+}

@@ -1,0 +1,18 @@
+mutation Login($input: LoginInput!) {
+  login(input: $input) {
+    accessToken
+    errors {
+      field
+      message
+      code
+    }
+    profile {
+      id
+      firstName
+      lastName
+      email
+      verifiedAt
+      isSalesRequired
+    }
+  }
+}

@@ -1,0 +1,17 @@
+fragment BasicProject on Project {
+  id
+  createdAt
+  updatedAt
+  deletedAt
+  goal
+  active
+  isActive
+  embeddedCode
+  slug
+  title
+  description
+  disease
+  mainImage
+  video
+  goalType
+}

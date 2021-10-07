@@ -1,0 +1,14 @@
+query PageShareEmailEdit($relations: [String!]) {
+  me(relations: $relations) {
+    ...BasicProfile
+    files {
+      ...BasicFile
+    }
+    projectChampion {
+      ...BasicProjectChampion
+      project {
+        ...BasicProject
+      }
+    }
+  }
+}

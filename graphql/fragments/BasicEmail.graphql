@@ -1,0 +1,18 @@
+fragment BasicEmail on Email {
+  id
+  createdAt
+  updatedAt
+  to
+  cc
+  bcc
+  replyTo
+  name
+  templateId
+  subjectLine
+  body
+  bodyHtml
+  customData
+  isIndividuallySent
+  isOnboardingEmail
+  sentAt
+}

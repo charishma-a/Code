@@ -1,0 +1,5 @@
+mutation ValidateDonorEmail($input: ValidateDonorEmailInput!) {
+  validateDonorEmail(input: $input) {
+    ...RegularDonor
+  }
+}

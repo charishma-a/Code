@@ -1,0 +1,18 @@
+mutation Signup($input: SignupInput!) {
+  signup(input: $input) {
+    accessToken
+    errors {
+      field
+      message
+      code
+    }
+    profile {
+      id
+      firstName
+      lastName
+      email
+      verifiedAt
+      isSalesRequired
+    }
+  }
+}

@@ -1,0 +1,5 @@
+mutation SendEmailViaArgContacts($input: SendEmailViaArgContactsInput!) {
+  sendEmailViaArgContacts(input: $input) {
+    ...BasicEmail
+  }
+}

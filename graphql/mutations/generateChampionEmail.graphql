@@ -1,0 +1,5 @@
+mutation GenerateChampionEmail {
+  generateChampionEmail {
+    ...BasicEmail
+  }
+}

@@ -1,0 +1,5 @@
+query Homepage($ids: [String!]!) {
+  projects(ids: $ids) {
+    ...ProjectCards
+  }
+}

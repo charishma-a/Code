@@ -1,0 +1,6 @@
+fragment PartialProjectCampaign on ProjectCampaign {
+  id
+  goalAmount
+  startDate
+  endDate
+}

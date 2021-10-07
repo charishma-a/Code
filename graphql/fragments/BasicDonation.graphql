@@ -1,0 +1,18 @@
+fragment BasicDonation on Donation {
+  id
+  createdAt
+  updatedAt
+  paymentIntentId
+  offline
+  amount
+  amountUsd
+  applicationFeeAmount
+  coveredFeePercent
+  currency
+  coverProcessingFee
+  processingFee
+  processingFeePercent
+  donationReasonOther
+  tip
+  tipPercent
+}

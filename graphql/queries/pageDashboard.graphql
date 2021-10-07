@@ -1,0 +1,20 @@
+query PageDashboard {
+  me {
+    ...BasicProfile
+  }
+  myActiveProjectCampaign {
+    ...BasicProjectCampaign
+    project {
+      ...BasicProject
+    }
+    projectChampion {
+      ...BasicProjectChampion
+      attributedDonations {
+        ...BasicDonation
+        donor {
+          ...BasicDonor
+        }
+      }
+    }
+  }
+}

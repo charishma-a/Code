@@ -1,0 +1,36 @@
+fragment RegularDonor on Donor {
+  id
+  firstName
+  lastName
+  email
+  optinKernlsUpdates
+  createdAt
+  updatedAt
+  deletedAt
+  verified
+  verifyEmailOnPaymentSuccess
+  address {
+    id
+    city
+    line1
+    line2
+    country {
+      id
+      name
+      code
+    }
+    province {
+      id
+      name
+      code
+    }
+    state {
+      id
+      name
+      code
+    }
+  }
+  parent {
+    id
+  }
+}

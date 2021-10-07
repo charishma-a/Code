@@ -1,0 +1,5 @@
+mutation DeleteMyFile($input: DeleteMyFileInput!) {
+  deleteMyFile(input: $input) {
+    ...BasicFile
+  }
+}

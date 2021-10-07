@@ -1,0 +1,12 @@
+fragment RegularProfile on Profile {
+  anonymous
+  avatar
+  id
+  firstName
+  lastName
+  email
+  gender
+  companyRole
+  createdAt
+  updatedAt
+}

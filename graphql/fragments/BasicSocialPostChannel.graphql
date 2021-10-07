@@ -1,0 +1,9 @@
+fragment BasicSocialPostChannel on SocialPostChannel {
+  id
+  createdAt
+  updatedAt
+  sequenceNumber
+  code
+  label
+  description
+}

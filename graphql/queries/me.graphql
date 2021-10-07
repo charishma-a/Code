@@ -1,0 +1,33 @@
+query Me($relations: [String!]) {
+  me(relations: $relations) {
+    id
+    createdAt
+    updatedAt
+    anonymous
+    isSalesRequired
+    avatar
+    firstName
+    lastName
+    email
+    phoneNumber
+    gender
+    companyRole
+    verifiedAt
+    customerId
+    profileChampion {
+      ...BasicProfileChampion
+      supportingProject {
+        id
+        title
+        description
+        disease
+      }
+    }
+    projectChampion {
+      ...BasicProjectChampion
+      project {
+        ...BasicProject
+      }
+    }
+  }
+}

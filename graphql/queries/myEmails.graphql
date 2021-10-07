@@ -1,0 +1,13 @@
+query MyEmails($id: String) {
+  myEmails(id: $id) {
+    ...BasicEmail
+    emailContacts {
+      id
+      createdAt
+      updatedAt
+      contact {
+        ...BasicContact
+      }
+    }
+  }
+}

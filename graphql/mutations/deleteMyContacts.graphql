@@ -1,0 +1,8 @@
+mutation DeleteMyContacts($input: DeleteMyContactsInput!) {
+  deleteMyContacts(input: $input) {
+    raw {
+      id
+    }
+    affected
+  }
+}

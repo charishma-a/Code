@@ -1,0 +1,5 @@
+mutation UploadMyFile($file: Upload!, $input: UploadMyFileInput!) {
+  uploadMyFile(file: $file, input: $input) {
+    ...BasicFile
+  }
+}

@@ -1,0 +1,7 @@
+mutation CreatePlaidLinkTokenAuth {
+  createPlaidLinkTokenAuth {
+    request_id
+    expiration
+    link_token
+  }
+}

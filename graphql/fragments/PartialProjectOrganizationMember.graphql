@@ -1,0 +1,22 @@
+fragment PartialProjectOrganizationMember on ProjectOrganizationMembers {
+  id
+  avatar
+  dedicatedNote
+  presenceOnPage
+  matchCommitment
+  bio
+  quote
+  order
+  organizationMember {
+    id
+    organizationRole
+    profile {
+      id
+      avatar
+      gender
+      firstName
+      lastName
+      email
+    }
+  }
+}

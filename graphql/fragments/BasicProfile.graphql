@@ -1,0 +1,18 @@
+fragment BasicProfile on Profile {
+  id
+  createdAt
+  updatedAt
+  anonymous
+  isSalesRequired
+  avatar
+  firstName
+  lastName
+  email
+  phoneNumber
+  gender
+  companyRole
+  verifiedAt
+  profileChampion {
+    ...BasicProfileChampion
+  }
+}

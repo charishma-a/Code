@@ -1,0 +1,5 @@
+query GetContactsFromMyFile($fileId: String!) {
+  getContactsFromMyFile(fileId: $fileId) {
+    ...BasicContact
+  }
+}

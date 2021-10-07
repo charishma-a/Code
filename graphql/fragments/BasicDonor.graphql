@@ -1,0 +1,12 @@
+fragment BasicDonor on Donor {
+  id
+  createdAt
+  updatedAt
+  firstName
+  lastName
+  email
+  optinKernlsUpdates
+  verified
+  verifiedAt
+  verifyEmailOnPaymentSuccess
+}

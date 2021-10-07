@@ -1,0 +1,3 @@
+mutation ResendVerifyEmail($input: ResendVerifyEmailInput!) {
+  resendVerifyEmail(input: $input)
+}

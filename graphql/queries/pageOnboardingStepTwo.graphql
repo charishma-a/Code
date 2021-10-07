@@ -1,0 +1,14 @@
+query PageOnboardingStepTwo($relations: [String!]) {
+  me(relations: $relations) {
+    ...BasicProfile
+    avatarFile {
+      ...BasicFile
+    }
+    projectChampion {
+      ...BasicProjectChampion
+      project {
+        ...BasicProject
+      }
+    }
+  }
+}

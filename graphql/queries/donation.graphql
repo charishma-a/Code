@@ -1,0 +1,51 @@
+query Donation($id: String!) {
+  donation(id: $id) {
+    id
+    paymentIntentId
+    amount
+    amountUsd
+    currency
+    coverProcessingFee
+    processingFee
+    processingFeePercent
+    donationReason {
+      id
+      code
+      reason
+    }
+    donationReasonOther
+    tip
+    tipPercent
+    donationMatch {
+      id
+      amount
+    }
+    donor {
+      id
+      firstName
+      lastName
+      email
+      optinKernlsUpdates
+      verified
+      verifyEmailOnPaymentSuccess
+      foundationDonors {
+        id
+        optinFoundationUpdates
+        optinReceiveFoundationTaxReceipt
+        foundation {
+          id
+        }
+      }
+    }
+    project {
+      id
+      goal
+      active
+    }
+    foundation {
+      id
+      processingFee
+      name
+    }
+  }
+}

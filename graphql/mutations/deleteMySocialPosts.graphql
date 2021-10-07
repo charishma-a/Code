@@ -1,0 +1,8 @@
+mutation DeleteMySocialPosts($input: DeleteMySocialPostsInput!) {
+  deleteMySocialPosts(input: $input) {
+    raw {
+      id
+    }
+    affected
+  }
+}

@@ -1,0 +1,31 @@
+query MyActiveProjectCampaign {
+  myActiveProjectCampaign {
+    ...BasicProjectCampaign
+    totalDeposits
+    projectChampion {
+      ...BasicProjectChampion
+    }
+    project {
+      ...BasicProject
+      researchInstitution {
+        ...BasicResearchInstitution
+      }
+      projectFoundations {
+        id
+        createdAt
+        updatedAt
+        foundation {
+          ...BasicFoundation
+        }
+      }
+      projectResearchers {
+        id
+        createdAt
+        updatedAt
+        researcher {
+          ...BasicResearcher
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+mutation PrepareDonation($input: PrepareDonationInput!) {
+  prepareDonation(input: $input) {
+    clientSecret
+    donationId
+    donation {
+      id
+      donor {
+        id
+        firstName
+        lastName
+        email
+      }
+    }
+    status
+  }
+}

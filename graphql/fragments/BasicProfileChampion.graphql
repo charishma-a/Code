@@ -1,0 +1,10 @@
+fragment BasicProfileChampion on ProfileChampion {
+  id
+  createdAt
+  updatedAt
+  supportingIllnesses
+  isFirstEmailSent
+  onboardingStep {
+    ...BasicProfileChampionOnboardingStep
+  }
+}

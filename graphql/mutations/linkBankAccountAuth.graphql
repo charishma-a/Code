@@ -1,0 +1,3 @@
+mutation LinkBankAccountAuth($input: LinkBankAccountAuthInput!) {
+  linkBankAccountAuth(input: $input)
+}

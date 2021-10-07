@@ -1,0 +1,41 @@
+fragment PartialProjectOrganization on ProjectOrganizations {
+  id
+  avatar
+  active
+  quote
+  matchCommitment
+  dedicatedNote
+  donationsAttributedTotal
+  donationsMatchedTotal
+  openMatchCommitment
+  openMatchCommitmentCad
+  isArchived
+  isActiveAndMatching
+  isMemberForward
+  activeCampaign {
+    ...PartialProjectCampaign
+  }
+  organization {
+    id
+    avatar
+    name
+    description
+    shortDescription
+    email
+    phoneNumber
+    profile {
+      id
+      avatar
+      gender
+      firstName
+      lastName
+      email
+    }
+  }
+  projectOrganizationMembers {
+    ...PartialProjectOrganizationMember
+  }
+  forwardProjectOrganizationMember{
+    ...PartialProjectOrganizationMember
+  }
+}

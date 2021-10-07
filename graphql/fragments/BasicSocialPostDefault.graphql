@@ -1,0 +1,6 @@
+fragment BasicSocialPostDefault on SocialPostDefault {
+  id
+  createdAt
+  updatedAt
+  content
+}

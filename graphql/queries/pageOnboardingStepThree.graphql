@@ -1,0 +1,23 @@
+query PageOnboardingStepThree {
+  me {
+    ...BasicProfile
+    projectChampion {
+      ...BasicProjectChampion
+      activeCampaign {
+        ...BasicProjectCampaign
+        onboardingEmail {
+          id
+          createdAt
+          updatedAt
+          subjectLine
+          body
+          bodyHtml
+          customData
+        }
+      }
+      project {
+        ...BasicProject
+      }
+    }
+  }
+}
