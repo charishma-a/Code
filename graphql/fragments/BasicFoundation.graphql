@@ -1,0 +1,10 @@
+fragment BasicFoundation on Foundation {
+  id
+  createdAt
+  updatedAt
+  name
+  description
+  taxReceiptStatement
+  currency
+  processingFee
+}

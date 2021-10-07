@@ -1,0 +1,8 @@
+fragment BasicSocialPost on SocialPost {
+  id
+  createdAt
+  updatedAt
+  name
+  content
+  postedAt
+}

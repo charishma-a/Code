@@ -1,0 +1,26 @@
+fragment PartialProjectChampion on ProjectChampions {
+  active
+  avatar
+  anonymous
+  quote
+  bio
+  presenceOnPage
+  dedicatedNote
+  donationsAttributedTotal
+  donationsMatchedTotal
+  openMatchCommitment
+  openMatchCommitmentCad
+  id
+  matchCommitment
+  isArchived
+  isActiveAndMatching
+  activeCampaign {
+    ...PartialProjectCampaign
+  }
+  profile {
+    ...RegularProfile
+  }
+  project {
+    ...BasicProject
+  }
+}

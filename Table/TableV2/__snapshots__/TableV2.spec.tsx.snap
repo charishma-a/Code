@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TableV2 /> matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="TableV2styled__Wrapper-gsywmi-8 dMsslf kernls-table-v2 "
+  >
+    <table
+      class="TableV2styled__Table-gsywmi-0 fOSAye"
+      role="table"
+    >
+      <thead
+        class="TableV2styled__TableHead-gsywmi-4"
+      >
+        <tr
+          class="TableV2styled__TableRow-gsywmi-5 TableV2styled__TableHeadRow-gsywmi-6 iBkcSj bGkSwo"
+          role="row"
+        >
+          <th
+            class="TableV2styled__TableHeadCell-gsywmi-2 cRcUDc"
+            colspan="1"
+            role="columnheader"
+          >
+            Date
+          </th>
+          <th
+            class="TableV2styled__TableHeadCell-gsywmi-2 kliURf"
+            colspan="1"
+            role="columnheader"
+          >
+            Description
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableV2styled__TableBody-gsywmi-1"
+        role="rowgroup"
+      >
+        <tr
+          class="TableV2styled__TableRow-gsywmi-5 iBkcSj"
+          role="row"
+        >
+          <td
+            class="TableV2styled__TableCell-gsywmi-3 ffYjLu"
+            role="cell"
+          >
+            July 2021
+          </td>
+          <td
+            class="TableV2styled__TableCell-gsywmi-3 jFjynR"
+            role="cell"
+          >
+            Prepare subjects for neural recordings
+          </td>
+        </tr>
+        <tr
+          class="TableV2styled__TableRow-gsywmi-5 iBkcSj"
+          role="row"
+        >
+          <td
+            class="TableV2styled__TableCell-gsywmi-3 ffYjLu"
+            role="cell"
+          >
+            Aug - Sept 2021
+          </td>
+          <td
+            class="TableV2styled__TableCell-gsywmi-3 jFjynR"
+            role="cell"
+          >
+            Collect neural recording data
+          </td>
+        </tr>
+        <tr
+          class="TableV2styled__TableRow-gsywmi-5 iBkcSj"
+          role="row"
+        >
+          <td
+            class="TableV2styled__TableCell-gsywmi-3 ffYjLu"
+            role="cell"
+          >
+            Oct 2021
+          </td>
+          <td
+            class="TableV2styled__TableCell-gsywmi-3 jFjynR"
+            role="cell"
+          >
+            Analyze statistics
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;

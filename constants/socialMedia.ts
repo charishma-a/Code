@@ -1,0 +1,8 @@
+export const URL = 'kernls.com'
+export const QUOTE = 'Share Kernls'
+export const HASHTAG = '#kernls'
+export const TITLE = 'Share about kernls'
+export const VIA = ''
+export const EMAIL_SUBJECT = 'EMAIL SUBJECT'
+export const EMAIL_BODY = 'EMail Body'
+export const SEPARATOR = ' '
